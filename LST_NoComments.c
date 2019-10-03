@@ -35,14 +35,12 @@ int main(void)
 	while (1)
 	{
 		//read
-		//printf("Nº de Tarefas \nTempo de Simulacao\n");
 		scanf("%d %d", &n_tasks, &time);
 		if ((n_tasks == 0) || (time == 0))
 			break;
 		for (leitura = 0; leitura < n_tasks; leitura++)
 		{
 			task[leitura].id = 'A' + leitura; 
-			//printf("\nTempo de Computacao (C) \nPeriodo (P) \nDeadline(D)\n");
 			scanf("%d %d %d", &(task[leitura].c), &(task[leitura].p), &(task[leitura].d));
 			task[leitura].Sobra_ctr = 1;
 			Sobra[leitura] = 1;
@@ -50,9 +48,6 @@ int main(void)
 			task[leitura].p_aux = task[leitura].p;
 			task[leitura].d_aux = task[leitura].d;
 			task[leitura].Prioridade = task[leitura].Prioridade + leitura;
-
-			//printf("task %d \nsobra %d\nCtr %d\n", leitura, task[leitura].Comp_Sobra, task[leitura].Sobra_ctr);
-
 		}
 
 		for (clear = 0; clear < time; clear++)
