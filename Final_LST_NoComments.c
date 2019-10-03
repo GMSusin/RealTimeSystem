@@ -167,10 +167,10 @@ int main(void)
 			{
 				Num_Premp++;
 			}
-			//printf("\n%s\n%d %d \n\n", Gantt, (Num_Premp), (Troca_Contexto));
+			printf("\n%s\n%d %d \n\n", Gantt, (Num_Premp), (Troca_Contexto));
 			if (t == (time -1)){
 				Gantt[t] = '\0';
-				printf("\nGantt: %s\nP:  %d+%d=%d TC: %d+%d=%d \n\n", Gantt, (Num_Premp-iddle_total),(iddle_total),(Num_Premp), (Troca_Contexto-iddle_total),(iddle_total),(Troca_Contexto));
+				//printf("\nGantt: %s\nP:  %d+%d=%d TC: %d+%d=%d \n\n", Gantt, (Num_Premp-iddle_total),(iddle_total),(Num_Premp), (Troca_Contexto-iddle_total),(iddle_total),(Troca_Contexto));
 			}
 		}
 
